@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Serendipity</title>
+    <link rel="stylesheet" href="css/normalize.css" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" 
+    rel="stylesheet">
+    <link rel="preload" href="css/styles.css" as="style">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logoserend.png">
+        </div> 
+    
+        <div class="nav-bg">
+            <nav class="navegacion-principal contenedor">
+                <a href="#">Inicio</a>
+                <a href="#">Reservaciones</a>
+                <a href="#">Paquetes</a>
+              
+                <a href="#">Contactanos</a>       
+            </nav>
+        </div>
+
+        <section class="banner">
+            <section class="contenido-banner">
+            <img src="img/letritas.png">
+        </section>
+        </section>
+    </header>
+
+    <main>
+        <h2 class="titulo">Galeria</h2>
+        <section>
+            <div class="tarjeta">
+                <div class="card">
+                    <figure>
+                        <img src="img/pexels-donald-tong-189296.jpg">
+                    </figure>
+                </div>
+
+                <div class="card">
+                    <figure>
+                        <img src="img/pexels-pixabay-161758.jpg">
+                    </figure>
+                </div>
+                
+                <div class="card">
+                    <figure>
+                        <img src="img/pexels-photo-1001965.jpeg">
+                    </figure>
+                </div>
+                
+                <div class="card">
+                    <figure>
+                        <img src="img/pexels-engin-akyurt-1579253.jpg">
+                    </figure>
+                </div>
+            </div>
+
+            <h2 class="titulo2">Vive el momento</h2>
+                <div class="contenedor-texto">
+                    <p class="texto-contenedor">Además de un lugar emblemático en el que alojarse, el Hotel Serendipity
+                    lo invitan a vivir el momento: a celebrar con la familia, a reír con amigos, 
+                    a compartir una comida con el equipo o simplemente a disfrutar de un merecido tiempo 
+                    para uno mismo. 
+                    Sin importar el motivo de tu viaje, cuando estás aquí, estás justo donde 
+                    debes estar.</p>
+                </div>
+            </section>
+
+
+<div class="contenedo">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Elegir fecha</title>
+                <style>
+                .contain {
+                  width: 100%; /* Ancho del contenedor */
+                  margin: 50px auto; /* Margen superior e inferior automático y centrado horizontal */
+                  text-align: center; /* Alineación del texto al centro */
+                  border: 2px solid #ccc; /* Borde del contenedor */
+                  padding: 20px; /* Espaciado interno */
+                  border-radius: 10px; /* Radio del borde */
+                  background-color: #f7c08a; /* Color de fondo */
+                }
+                </style>
+                </head>
+                <body>
+                
+                <div class="contain">
+                  <h2>Reservacion</h2>
+                  <!-- Aquí puedes agregar elementos adicionales como campos de fecha, botones, etc. -->
+                </div>
+                
+                </body>
+
+
+        <div class="contenedo">
+            <form className="flex flex-col">
+                <div className="flex justify-between">
+                  <div className="flex flex-col">
+                    <label>Entrada</label>
+                    <input type="date" />
+                  </div>
+                  <div className="flex flex-col">
+                    <label>Salida</label>
+                    <input type="date" />
+                  </div>
+                </div>
+                <div className="flex justify-between mt-4">
+                  <div className="flex flex-col items-center">
+                    <label htmlFor="adults">Adultos</label>
+                    <div className="flex">
+                      <button>-</button>
+                      <input id="adults" type="text" value="1" />
+                      <button>+</button>
+                    </div>
+                  </div>
+                  <div className="flex flex-col items-center">
+                    <label htmlFor="children">Niños</label>
+                    <div className="flex">
+                      <button>-</button>
+                      <input id="children" type="text" value="0" />
+                      <button>+</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+         <div>
+
+    </main>
+
+
+
+
+  
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Planes de Hospedaje</title>
+<style>
+.tab-container {
+  width: 70%;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.tab {
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
+  background-color: #f7c08a;
+}
+
+.tab a {
+  float: left;
+  display: block;
+  padding: 12px 16px;
+  text-decoration: none;
+  color: black;
+  border-right: 1px solid #ccc;
+}
+
+.tab a.active {
+  background-color: white;
+}
+
+.tabcontent-container {
+  padding: 20px;
+}
+
+.tabcontent {
+  display: none;
+  border-top: none;
+}
+
+.tabcontent.show {
+  display: block;
+}
+
+/* Estilos para las imágenes en las pestañas */
+.tab img {
+  vertical-align: middle;
+  margin-right: 8px; /* Espacio entre la imagen y el texto */
+}
+
+/* Estilos para el botón de contratar */
+.contratar-btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<div class="tab-container">
+  <div class="tab">
+    <a href="#" class="tablinks active" onclick="openTab(event, 'hospedaje')"><img src="hospedaje.png" alt="Hospedaje">Solo Hospedaje</a>
+    <a href="#" class="tablinks" onclick="openTab(event, 'experiencia-completa')"><img src="experiencia.png" alt="Experiencia">Experiencia Completa</a>
+    <a href="#" class="tablinks" onclick="openTab(event, 'hospedaje-desayuno')"><img src="hospedaje-desayuno.png" alt="Hospedaje y Desayuno">Hospedaje y Desayuno</a>
+  </div>
+
+  <div class="tabcontent-container">
+    <div id="hospedaje" class="tabcontent show">
+      <h3>Hospedaje</h3>
+      <p>Contenido del plan de hospedaje.</p>
+      <img src="img/Solo Hospedaje.jpg">
+    </div>
+    <div id="experiencia-completa" class="tabcontent">
+      <h3>Experiencia Completa</h3>
+      <p>Contenido del plan de experiencia completa.</p>
+      <img src="img/Experiencia Completa.jpg">
+    </div>
+    <div id="hospedaje-desayuno" class="tabcontent">
+      <h3>Hospedaje y Desayuno</h3>
+      <p>Contenido del plan de hospedaje y desayuno.</p>
+      <img src="img/Hospedaje y desayuno.jpg">
+    </div>
+  </div>
+
+  <!-- Botón de Contratar -->
+  <button class="contratar-btn" onclick="contratar()">Contratar</button>
+</div>
+
+<script>
+function openTab(evt, tabName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+function contratar() {
+  // Aquí puedes agregar la lógica para contratar el plan seleccionado
+  alert("¡Plan contratado!");
+}
+</script>
+<div>
+</body>
+     <section id="contact-form" class="py-3">
+         <div class="container">
+            <h1 class="l-heading"><span class="text-primary">Contact </span> Us</h1>
+            <p>Please fill in all spots so you can contact us</p>
+          
+                <div class="form-group">
+                   <label for="name">Nombre</label>
+                   <input type="text" name="Name" id="Name">
+                </div>
+                <div class="form-group">
+                   <label for="email">Correo</label>
+                   <input type="email" name="email" id="email">
+                </div>
+                <div class="form-group">
+                   <label for="message">Mensaje</label>
+                   <textarea type="email" name="message" id="message"></textarea>
+                </div>
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+         </div>
+     </section>
+     <section id="contact-info" class="bg-dark">
+         <div class="container">
+            <div class="box ">
+                <i class="fas fa-hotel fa-3x"></i>
+                   <h3> Location</h3>
+                   <p>Blvd. Revolución y, Av. Instituto</p>
+                <p> Tecnológico de La Laguna s/n, Primero </p>
+            <p> de Cobián Centro, 27000 Torreón, Coah.</p>
+               </div>
+               <div class="box">
+                <i class="fas fa-phone fa-3x"></i>
+                <h3>Telefone Number</h3>
+                <p>+52 871 705 1313</p>
+               </div>
+               <div class="box ">
+                <i class="fas fa-envelope fa-3x"></i>
+                <h3>Email Address</h3>
+                <p>serviciosexternos@correo.itlalaguna.edu.mx></p>
+               </div>
+         </div>
+
+     </section>
+ 
+</body>
+</html>
